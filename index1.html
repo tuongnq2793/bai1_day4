@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Liên Hệ</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <form class="contact-form">
+    <h2>Liên Hệ</h2>
+    <label for="fullname">Họ tên</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Số điện thoại</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" placeholder="0912345678" required>
+
+    <label for="message">Nội dung</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Gửi</button>
+  </form>
+</body>
+</html>
